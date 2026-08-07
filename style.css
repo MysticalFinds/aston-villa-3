@@ -209,3 +209,84 @@ footer{
 }
 
 }
+
+/* Smooth scrolling */
+html{
+    scroll-behavior:smooth;
+}
+
+/* Animated gradient */
+.hero{
+    background:linear-gradient(-45deg,#6a0032,#8b4b8f,#8db5e7,#6a0032);
+    background-size:400% 400%;
+    animation:gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Sticky navbar */
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(10px);
+}
+
+/* Menu animation */
+nav a{
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#9fd0ff;
+    transform:translateY(-2px);
+}
+
+/* Player cards */
+.player-card{
+    transition:0.35s ease;
+}
+
+.player-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+/* Stats cards */
+.stat{
+    transition:.3s;
+}
+
+.stat:hover{
+    transform:translateY(-6px);
+}
+
+/* Fade animation */
+section{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Search */
+#search{
+    transition:.3s;
+}
+
+#search:focus{
+    transform:scale(1.03);
+    box-shadow:0 0 25px rgba(150,200,255,.5);
+}
