@@ -1,116 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aston Villa FC</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<title>Aston Villa FC</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
+<nav class="navbar">
+
+<div class="logo">
+🦁 ASTON VILLA FC
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#squad">Squad</a></li>
+
+<li><a href="#fixtures">Fixtures</a></li>
+
+<li><a href="#table">League Table</a></li>
+
+<li><a href="#news">News</a></li>
+
+<li><a href="#staff">Staff</a></li>
+
+</ul>
+
+</nav>
+
 <header class="hero">
 
-    <h1>🏆 ASTON VILLA FC</h1>
+<h1>ASTON VILLA FC</h1>
 
-    <p>Official Roblox Football Club</p>
+<p>
 
-    <input
-        id="search"
-        type="text"
-        placeholder="🔍 Search player..."
-    >
+Official Roblox Football Club
+
+</p>
+
+<input
+
+type="text"
+
+id="search"
+
+placeholder="🔍 Search player..."
+
+>
 
 </header>
 
 <section class="stats">
 
-    <div class="stat">
-        <h2>20</h2>
-        <p>Players</p>
-    </div>
+<div class="stat">
 
-    <div class="stat">
-        <h2>2</h2>
-        <p>Goalkeepers</p>
-    </div>
+<h2>20</h2>
 
-    <div class="stat">
-        <h2>6</h2>
-        <p>Defenders</p>
-    </div>
+<span>Players</span>
 
-    <div class="stat">
-        <h2>5</h2>
-        <p>Midfielders</p>
-    </div>
+</div>
 
-    <div class="stat">
-        <h2>7</h2>
-        <p>Attackers</p>
-    </div>
+<div class="stat">
 
-</section>
+<h2>2</h2>
 
-<section>
+<span>Goalkeepers</span>
 
-<h2 class="title">👥 First Team Squad</h2>
+</div>
 
-<div id="players" class="players"></div>
+<div class="stat">
 
-</section>
+<h2>6</h2>
 
-<section>
+<span>Defenders</span>
 
-<h2 class="title">📅 Upcoming Fixtures</h2>
+</div>
 
-<div id="fixtures"></div>
+<div class="stat">
 
-</section>
+<h2>5</h2>
 
-<section>
+<span>Midfielders</span>
 
-<h2 class="title">🏆 League Table</h2>
+</div>
 
-<div id="table"></div>
+<div class="stat">
 
-</section>
+<h2>7</h2>
 
-<section>
-
-<h2 class="title">📰 Latest News</h2>
-
-<div id="news"></div>
-
-</section>
-
-<section class="staff">
-
-<h2 class="title">👑 Staff</h2>
-
-<div class="staff-card">
-
-<h3>Manager</h3>
-
-<p>Zeltsx21 / Cris</p>
-
-<hr>
-
-<h3>Assistant Manager</h3>
-
-<p>Vacant</p>
+<span>Attackers</span>
 
 </div>
 
 </section>
 
+<section id="squad">
+
+<h2 class="section-title">
+
+👥 First Team Squad
+
+</h2>
+
+<h3>
+
+🧤 Goalkeepers
+
+</h3>
+
+<div id="goalkeepers" class="players-row">
+
+</div>
+
+<h3>
+
+🛡 Defenders
+
+</h3>
+
+<div id="defenders" class="players-row">
+
+</div>
+
+<h3>
+
+🎯 Midfielders
+
+</h3>
+
+<div id="midfielders" class="players-row">
+
+</div>
+
+<h3>
+
+⚽ Attackers
+
+</h3>
+
+<div id="attackers" class="players-row">
+
+</div>
+
+</section>
+<section id="fixtures">
+
+<h2 class="section-title">📅 Upcoming Fixtures</h2>
+
+<div class="coming-soon">
+<h3>Fixtures Coming Soon</h3>
+<p>Upcoming matches will be announced soon.</p>
+</div>
+
+</section>
+
+<section id="table">
+
+<h2 class="section-title">🏆 League Table</h2>
+
+<div class="coming-soon">
+<h3>League Table Coming Soon</h3>
+<p>The league standings will appear here.</p>
+</div>
+
+</section>
+
+<section id="news">
+
+<h2 class="section-title">📰 Latest News</h2>
+
+<div class="coming-soon">
+<h3>News Coming Soon</h3>
+<p>Club announcements and updates will be posted here.</p>
+</div>
+
+</section>
+
+<section id="staff">
+
+<h2 class="section-title">👑 Club Staff</h2>
+
+<div class="staff-card">
+
+<h3>Manager</h3>
+<p><strong>Zeltsx21 / Cris</strong></p>
+
+<hr>
+
+<h3>Assistant Manager</h3>
+<p>Vacant</p>
+
+<hr>
+
+<h3>Owner</h3>
+<p>TBA</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Aston Villa FC Roblox Club</p>
+
+</footer>
+
 <script src="data/players.js"></script>
-<script src="data/fixtures.js"></script>
-<script src="data/table.js"></script>
-<script src="data/news.js"></script>
 <script src="script.js"></script>
 
 </body>
