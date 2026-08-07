@@ -72,3 +72,18 @@ document.getElementById("news-box").innerHTML = `
   <p>Latest club updates will be posted here.</p>
 </div>
 `;
+document.querySelectorAll(".stat h2").forEach(counter=>{
+    const target=parseInt(counter.innerText);
+
+    let count=0;
+
+    const update=()=>{
+        if(count<target){
+            count++;
+            counter.innerText=count;
+            requestAnimationFrame(update);
+        }
+    }
+
+    update();
+});
