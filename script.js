@@ -105,3 +105,22 @@ sections.forEach(section=>{
     section.style.transition="all .8s ease";
     observer.observe(section);
 });
+// Scroll reveal animation
+const revealElements = document.querySelectorAll(
+    "section, .player-card, .stat"
+);
+
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+revealElements.forEach((element) => {
+    element.classList.add("hidden");
+    revealObserver.observe(element);
+});
