@@ -405,3 +405,72 @@ footer:hover{
     opacity: 1;
     transform: translateY(0);
 }
+/* ===== Animated background ===== */
+
+body{
+    background:#670E36;
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(149,191,229,.12), transparent 25%),
+        radial-gradient(circle at 80% 30%, rgba(255,255,255,.05), transparent 30%),
+        radial-gradient(circle at 50% 80%, rgba(149,191,229,.08), transparent 25%);
+    background-size:200% 200%;
+    animation:bgMove 18s ease infinite;
+}
+
+@keyframes bgMove{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+/* Light beam over hero */
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:-150%;
+    left:-50%;
+    width:60%;
+    height:400%;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.12),
+        transparent
+    );
+    transform:rotate(25deg);
+    animation:shine 7s linear infinite;
+}
+
+@keyframes shine{
+    from{
+        left:-80%;
+    }
+    to{
+        left:180%;
+    }
+}
+
+/* Floating hero title */
+.hero h1{
+    animation:floatTitle 4s ease-in-out infinite;
+}
+
+@keyframes floatTitle{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+}
